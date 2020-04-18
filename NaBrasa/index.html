@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mateus Augusto do Amaral">
+    <meta name="description" content="Site desenvolvido no curso de Frontend completo">
+    <meta name="keywords" content="curso, frontend, completo, site, moderno">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Meu proprio css personalizado -->
+    <link rel="stylesheet" href="./CSS/sass/principal.css">
+    <!-- Icones vetorizados -->
+    <script src="https://kit.fontawesome.com/6b5bfcab86.js" crossorigin="anonymous"></script>
+    <!-- Google fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--Magnific popup para abrir as imagens em formato de slide-->
+    <link href="magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Slick Carrosel -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet">
+
+    <title>NA BRASA &bull; CHURRASCARIA</title>
+
+</head>
+
+<body>
+
+    <!--#Inicio cabecalho da págin-->
+    <div class="container-fluid p-2 info" id="icones-topo">
+        <div class="row">
+            <div
+                class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-baseline flex-wrap">
+                <div class="p-2 info-icones">
+                    <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                </div>
+            </div>
+
+            <h2 id="logo" class="p-2 text-capitalize"><a href="#" title="Voltar ao inicio">São Paulo, SP</a></h2>
+
+        </div>
+    </div>
+
+    <!--#fim cabecalho da págin-->
+
+
+
+
+    <!--#Inicio cabecalho principal -->
+    <header>
+        <div class="container">
+            <div class="row row-bn align-items-center justify-content-center">
+                <div class="col">
+                    <div class="banner text-center">
+                        <h1 class="display-1 text-capitalize w-47 mx-auto">
+                            <small>Tem</small>
+                            <strong>Rodízio</strong>
+                        </h1>
+
+                        <a href="#pedidoModal" class="btn pedir-btn my-2 text-capitalize" class="trigger-btn"
+                            data-toggle="modal">Faça seu pedido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#cardapio" class="btn btn-adiante"><i class="fas fa-arrow-down" alt="Ir para próxima sessão do site"></i></a>
+    </header>
+    <!--#Fim cabecalho principal -->
+
+
+
+
+    <!--#Inicio menu -->
+    <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="img/logo/ilaranjaescuro.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#minhaNavBar">
+            <div class="toggler-btn">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="minhaNavBar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="#icones-topo" class="nav-link text-capitalize">Home</a></li>
+                <li class="nav-item"><a href="#cardapio" class="nav-link text-capitalize">Cardápio</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link text-capitalize">Sobre</a></li>
+                <li class="nav-item"><a href="#recomendacoes" class="nav-link text-capitalize">Recomendações</a></li>
+                <li class="nav-item"><a href="#equipe" class="nav-link text-capitalize">Equipe</a></li>
+                <li class="nav-item"><a href="#cozinha" class="nav-link text-capitalize">Cozinha</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link text-capitalize">Contatos</a></li>
+            </ul>
+
+            <form class="form-inline d-none d-lg-block mr-5">
+                <a href="#pedidoModal" class="btn nav-btn text-capitalize" class="trigger-btn" data-toggle="modal">Pedir
+                    Agora</a>
+            </form>
+        </div>
+    </nav>
+    <!--#Fim menu -->
+
+
+
+
+    <!--#Inicio cardapio -->
+    <section class="py-5" id="cardapio">
+
+        <!--#Inicio pratos -->
+        <div class="container my-5">
+            <h1 class="text-center"><i class="fas fa-utensils"></i> <br> Pratos & Porções</h1>
+
+            <div class="carrossel row parent-container">
+
+                <!-- Item 01 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/cardapio/c2.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/cardapio/c2.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 02 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/cardapio/c3.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/cardapio/c3.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 03 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/cardapio/c4.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/cardapio/c4.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 04 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/cardapio/c5.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/cardapio/c5.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 05 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/cardapio/c6.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/cardapio/c6.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--#fim das pratos -->
+
+
+
+
+        <!--#Inicio bebidas -->
+        <div class="container my-5">
+            <h1 class="text-center"><i class="fas fa-beer"></i> <br> Bebidas & Drinks</h1>
+
+            <div class="carrossel row parent-container">
+
+                <!-- Item 01 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/bebidas/b1.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/bebidas/b1.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 02 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/bebidas/b2.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/bebidas/b2.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 03 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/bebidas/b3.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/bebidas/b3.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 04 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/bebidas/b4.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/bebidas/b4.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 05 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/bebidas/b5.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/bebidas/b5.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 06 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/bebidas/b6.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/bebidas/b6.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 07 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/bebidas/b7.jpeg" class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="img/bebidas/b7.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--#fim bebidas -->
+
+    </section>
+    <!--#Fim cardapio -->
+
+
+    <!--Inicio sobre nós-->
+
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 my-5 sobre-conteudo">
+                    <h1 class="text-uppercase display-5">
+                        Sobre Nós
+                    </h1>
+                    <h2>
+                        A melhor churrascaria de todo o país, conta com excelente atendimento e mais de 200 tipos de carne, sendo preparados da melhor maneira para satisfaze-los. Contamos com 200 funcionários para proporcionar a melhor expeciência aos nossos clientes, venham conferir.
+                    </h2>
+
+                    <a href="#" class="btn pedir-btn my-4 text-capitalize">Leia Mais</a>
+                </div>
+
+                <div class="col-md-5 col-sm-12 fotos-churrascaria">
+                    <img src="/img/churrascaria/r1.jpg" alt="Imagem da churrascaria" class="img-thumbnail">
+                    <img src="/img/churrascaria/r2.jpeg" alt="Imagem da churrascaria" class="img-thumbnail">
+                    <img src="/img/churrascaria/r3.jpeg" alt="Imagem da churrascaria" class="img-thumbnail">
+                    <img src="/img/churrascaria/r4.jpeg" alt="Imagem da churrascaria" class="img-thumbnail">
+                    <img src="/img/churrascaria/r5.jpeg" alt="Imagem da churrascaria" class="img-thumbnail">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Fim sobre nós-->
+
+
+
+
+    <!--Inicio  Equipe-->
+
+    <section id="equipe">
+        <div class="container">
+            <h1 class="text-center">
+                <i class="fas fa-users"></i><br>
+                Equipe
+            </h1>
+
+            <div class="row">
+                <!--Inicio cartão funcionario 1-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/e01.jpg" alt="Foto funcionario">
+                        </div>
+                        <div class="equipe-content">
+                            <h3 class="titulo">Rebeca</h3>
+                            <span class="funcao">Chefe</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Fim cartão funcionario 1-->
+                <!--Inicio cartão funcionario 2-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/e02.jpg" alt="Foto funcionario">
+                        </div>
+                        <div class="equipe-content">
+                            <h3 class="titulo">Joelyson</h3>
+                            <span class="funcao">Cozinheiro</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Fim cartão funcionario 2-->
+                <!--Inicio cartão funcionario 3-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/e03.jpg" alt="Foto funcionario">
+                        </div>
+                        <div class="equipe-content">
+                            <h3 class="titulo">Juliana</h3>
+                            <span class="funcao">Sub-chefe</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Fim cartão funcionario 3-->
+                <!--Inicio cartão funcionario 4-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/e04.jpg" alt="Foto funcionario">
+                        </div>
+                        <div class="equipe-content">
+                            <h3 class="titulo">Vanderlei</h3>
+                            <span class="funcao">Mestre Cervejeiro</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Fim cartão funcionario 4 -->
+            </div>
+        </div>
+    </section>
+
+    <!--Fim  Equipe-->
+
+
+
+    <!--Inicio cozinha-->
+
+    <section id="cozinha" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 fotos-churrascaria" style="transform: rotate(-4deg);">
+                    <img src="/img/cozinha/c1.jpeg" alt="Imagem da nossa cozinha" class="img-thumbnail">
+                    <img src="/img/cozinha/c2.jpeg" alt="Imagem da nossa cozinha" class="img-thumbnail">
+                </div>
+                <div class="col-md-7 my-5 sobre-conteudo">
+                    <h1 class="text-uppercase display-5">
+                        Nossa cozinha
+                    </h1>
+                    <h2>
+                        Contamos com materias de ponta totalmente higienizados e alimentos totalmente livres de agrotóxicos, sinta-se livre para visitar nossa cozinha e conferir nossa qualidade e atenção ao preparar a melhor carne que nossos cliente já provaram!
+                    </h2>
+
+                    <a href="#" style="float: right;" class="btn pedir-btn my-4 text-capitalize">Leia Mais</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Fim cozinha-->
+
+
+    <!--Inicio recomendações-->
+    
+    <section id="recomendacoes" class="py-5">
+        <h1 class="text-center">
+            <i class="fas fa-thumbs-up"></i><br>
+            Recomendações
+        </h1>
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!--Inicio Recomendacao 01-->
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
+                                    <div class="align-self-center ml-5">
+                                        <img src="/img/equipe/e01.jpg" alt="Cliente" class="rounded-circle recomendacao-foto">
+                                    </div>
+                                    <div class="align-self-center recomendacao-nome px-5">
+                                        <h2 class="text-capitalize mb-3">Maria</h2>
+                                        <p class="recomendacao-texto">Realmente uma churrascaria que vale a pena conhecer, carnes de excelente qualidade e cerveja gelada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--fim Recomendacao 01-->
+                <!--Inicio Recomendacao 02-->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
+                                    <div class="align-self-center ml-5">
+                                        <img src="/img/equipe/e02.jpg" alt="Cliente" class="rounded-circle recomendacao-foto">
+                                    </div>
+                                    <div class="align-self-center recomendacao-nome px-5">
+                                        <h2 class="text-capitalize mb-3">João</h2>
+                                        <p class="recomendacao-texto">Nunca fui atendido tão bem em um local, recomendo todas pessoas a irem conferir a excelente qualidade do atendimento!!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--fim Recomendacao 02-->
+            </div>
+
+            <!-- Controles do carrossel-->
+            <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span></a>
+            <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span></a>
+
+        </div>
+    </section>
+    
+    <!--Fim recomendações-->
+
+
+
+
+    <!--Inicio contato-->
+    
+    <section id="contato">
+        <div class="container-fluid no-padding">
+            <div class="row">
+                <div class="col-md-6 my-3">
+                    <div class="embed-responsive by9 mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58523.16196889953!2d-46.64228146557617!3d-23.543375620161637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597d462f58ad%3A0x1e5241e2e17b7c17!2sS%C3%A3o+Paulo!5e0!3m2!1spt-BR!2sbr!4v1539870849495" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3 align-self-center">
+                    <div class="cartao text-center">
+                        <div class="cartao-cabecalho text-uppercase">
+                            <h1 class="text-uppercase">Entre em Contato</h1>
+                        </div>
+                        <div class="corpo-cartao">
+                            <form>
+                                <!-- Inicio caixa de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <input type="text" id="text" class="form-control form-control-lg" placeholder="Informe seu nome aqui...">
+                                    </div>
+                                </div>
+                                <!-- fim caixa de texto-->
+                                <!-- Inicio caixa de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-text">
+                                            <i class="fas fa-phone"></i>
+                                        </span>
+                                        <input type="text" id="telefone" class="form-control form-control-lg" placeholder="Informe seu telefone aqui...">
+                                    </div>
+                                </div>
+                                <!-- fim caixa de texto-->
+                                <!-- Inicio caixa de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-text">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                        <input type="email" id="email" class="form-control form-control-lg" placeholder="Informe seu email aqui...">
+                                    </div>
+                                </div>
+                                <!-- fim caixa de texto-->
+                                <!-- Inicio caixa de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <textarea id="mensagem" rows="5" class="form-control form-control-lg" placeholder="Escreva sua mensagem aqui..."></textarea>
+                                    </div>
+                                </div>
+                                <!-- fim caixa de texto-->
+
+                                <button type="submit" class="btn btn-block btn-lg text-uppercase contato-btn"><i class="far fa-hand-point-right mr-2"></i>Enviar</button>
+                            </form>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Fim contato-->
+
+
+    <!--Inicio rodpé-->
+    <footer>
+        <div class="container-fluid p-2 info" id="icones-topo">
+            <div class="row">
+                <div
+                class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-baseline flex-wrap">
+                <div class="p-2 info-icones">
+                    <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                </div>
+            </div>
+            
+            <h2 id="copyright" class="p-2 text-capitalize"><a href="#" title="Voltar ao inicio">&copy;Copyright 2020</a></h2>
+            
+        </div>
+    </div>
+
+    <!--Inicio voltar ao topo-->
+    <a href="#icones-topo" id="voltar-topo" class="p-1" title="Voltar ao topo"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
+    <!--fim voltar ao topo-->
+</footer>
+    <!--Fim rodpé-->
+
+
+    <!--Inicio pedido modal-->
+    <div id="pedidoModal" class="modal fade">
+        <div class="modal-dialog modal-pedido">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="img/pedir.png" alt="Icone da Tela de Pedido Online.">
+                    </div>
+                    <h4 class="modal-title">Pedido Online</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome..." required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea rows="3" class="form-control" name="pedido" placeholder="O que você gostaria de pedir?" required="required"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-lg btn-block login-btn">Pedir</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!--fim pedido modal-->
+
+
+
+</body>
+
+<!-- jquery -->
+<script src="./JS/jquery-3.3.1.min.js"></script>
+<!-- bootstrap -->
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<!-- JS Effeito fumaça-->
+<script src="./JS/jquery.ripples-min.js"></script>
+<!--Magnific popup para abrir as imagens em formato de slide-->
+<script src="./magnific-popup/jquery.magnific-popup.js"></script>
+<!-- Carrosel de imagem do cardápio -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+<!-- JS Personalizado -->
+<script src="./JS/script.js"></script>
+
+</html>
